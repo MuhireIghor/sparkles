@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ANTI-D</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: #00e676;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00e676;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #00e676;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: #00e676;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        #contact-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        #contact-form button {
+            padding: 12px 20px;
+            background-color: #00e676;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact-form button:hover {
+            background-color: #00b248;
+        }
+
+        #contact-form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul li a {
+            color: #00e676;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        ul li a:hover {
+            color: #00b248;
+        }
+
+        #chatbot,
+        #voice-assistant {
+            margin-top: 30px;
+        }
+
+        #chatbot h2,
+        #voice-assistant h2 {
+            color: #00e676;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #chat-window {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-window #messages {
+            height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #chat-window input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            flex: 1;
+        }
+
+        #chat-window button {
+            padding: 10px 20px;
+            background-color: #00e676;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-left: 10px;
+        }
+
+        #chat-window button:hover {
+            background-color: #00b248;
+        }
+
+        #voice-assistant button {
+            padding: 12px 20px;
+            background-color: #00e676;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #voice-assistant button:hover {
+            background-color: #00b248;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">ANTI-D</div>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <p>
+            We value your feedback and inquiries. If you have any questions, suggestions, or concerns about ANTI-D,
+            please feel free to reach out to us. Your input is important to us and helps us improve our services.
+        </p>
+        <p>
+            You can contact us using the form below or by sending an email to <a
+                href="mailto:info@antidproject.com">info@antidproject.com</a>. We aim to respond to all inquiries within
+            48 hours.
+        </p>
+
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <p>
+            Alternatively, you can reach us through our social media channels:
+        </p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+
+        <section id="chatbot">
+            <h2>Test the Chatbot</h2>
+            <div id="chat-window">
+                <div id="messages"></div>
+                <div style="display: flex;">
+                    <input type="text" id="user-input" placeholder="Type a message...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="voice-assistant">
+            <h2>Voice Assistant</h2>
+            <button id="voice-btn">Talk to Us</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ANTI-D / by: Sparkles</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

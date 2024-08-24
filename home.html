@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTI-D - Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: #00e676;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .block a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        .block a:hover {
+            color: #00e676;
+        }
+
+        .hero-section {
+            height: 100vh;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .cta-buttons a {
+            background-color: #00e676;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #00b248;
+        }
+
+        main {
+            padding: 40px 20px;
+            background-color: #fff;
+            margin-top: -50px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        main h2 {
+            text-align: center;
+            color: #00e676;
+            margin-bottom: 40px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        section img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00e676;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            background-color: #00e676;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #00b248;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="block">
+            <div class="logo">ANTI-D</div>
+            <div>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Project ANTI-D</h1>
+            <p>Tackling depression and loneliness, saving lives across the globe. Join us in making a difference today.</p>
+            <div class="cta-buttons">
+                <a href="#learn-more">Learn More</a>
+                <a href="#get-involved">Get Involved</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <h2>About Us</h2>
+        <section>
+            <p>
+                ANTI-D was created with a clear mission: to provide accessible and effective support for individuals
+                struggling with depression. We understand that mental health is a critical issue that affects millions
+                of people worldwide, and we are dedicated to offering solutions that make a real difference.
+            </p>
+            <img src="treatment.jpeg" alt="Treatment">
+            <p>
+                Our project started with the vision of integrating modern technology into mental health support. The
+                team behind ANTI-D comprises experts in artificial intelligence, psychology, and software development,
+                all working together to create a holistic solution for mental well-being.
+            </p>
+            <p>
+                Our chatbot is designed to engage users in meaningful conversations, offering a source of comfort and
+                guidance. The voice assistant enhances this experience by providing an additional layer of interaction,
+                making it easier for users to access support in a way that suits their preferences.
+            </p>
+            <img src="ANTI-D LOGO.jpeg" alt="ANTI-D Logo">
+            <p>
+                Thank you for exploring ANTI-D. We hope our project makes a positive impact and provides valuable
+                support on your journey toward mental well-being.
+            </p>
+        </section>
+    </main>
+
+    <div class="contact-form">
+        <h1>Contact Us</h1>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ANTI-D / by: Sparkles</p>
+    </footer>
+</body>
+
+</html>
